@@ -1,0 +1,16 @@
+.btn {
+    width: 14em;
+    height: 4em;
+
+    background-color: aquamarine;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >a {
+        color: $black;
+        font-size: 24px;
+        font-family: 'Roboto';
+    }
+}
