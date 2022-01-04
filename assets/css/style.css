@@ -3,6 +3,7 @@ header {
   width: 100vw;
   background-image: url(/assets/img/home.jpg);
   background-size: cover;
+  overflow-x: hidden;
 }
 header > section {
   height: 100%;
@@ -14,11 +15,9 @@ header > section {
 }
 header > section > h1 {
   font-size: 54px;
-  font-family: "Roboto";
 }
 header > section > p {
   font-size: 24px;
-  font-family: "Roboto";
   font-style: italic;
   margin-top: 0.5em;
 }
@@ -152,7 +151,7 @@ header > section a:active .line.-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 92vw;
+  width: 90vw;
 }
 .navbar > ul > li {
   width: 12em;
@@ -165,7 +164,6 @@ header > section a:active .line.-bottom {
   position: relative;
   color: #000;
   font-size: 20px;
-  font-family: "Poppins";
   font-weight: 600;
 }
 .navbar > ul > li > a::after {
@@ -188,6 +186,86 @@ header > section a:active .line.-bottom {
   width: 100%;
 }
 
+main {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6em;
+}
+main .container-staff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+main .container-staff h2:first-child {
+  font-size: 44px;
+}
+main .container-staff p:nth-child(2) {
+  font-size: 20px;
+}
+main .container-staff .grid-staff {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .container-staff .grid-staff > .row-fonda {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .container-staff .grid-staff > .row-fonda > a {
+  background-color: grey;
+  background-size: cover;
+  background-image: url(/assets/img/LogoNNNoiretblanc.png);
+  width: 8em;
+  height: 10em;
+  margin: 2em;
+}
+main .container-staff .grid-staff .row-staff {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .container-staff .grid-staff .row-staff > a {
+  background-color: grey;
+  background-size: cover;
+  background-image: url(/assets/img/LogoNNNoiretblanc.png);
+  width: 8em;
+  height: 10em;
+  margin: 2em;
+}
+main .container-staff .grid-staff .row-modo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .container-staff .grid-staff .row-modo > a {
+  background-color: grey;
+  background-size: cover;
+  background-image: url(/assets/img/LogoNNNoiretblanc.png);
+  width: 8em;
+  height: 10em;
+  margin: 2em;
+}
+main .container-staff .grid-staff .row-mentor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .container-staff .grid-staff .row-mentor > a {
+  background-color: grey;
+  background-size: cover;
+  background-image: url(/assets/img/LogoNNNoiretblanc.png);
+  width: 8em;
+  height: 10em;
+  margin: 2em;
+}
+
 *, ::before, ::after {
   list-style: none;
   box-sizing: border-box;
@@ -195,6 +273,14 @@ header > section a:active .line.-bottom {
   padding: 0;
   margin: 0;
   border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto";
+}
+
+p, a {
+  font-family: "Poppins";
 }
 
 /*# sourceMappingURL=style.css.map */
