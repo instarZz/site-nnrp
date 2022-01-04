@@ -186,6 +186,17 @@ header > section a:active .line.-bottom {
   width: 100%;
 }
 
+.navbar.sticky {
+  height: 5vh;
+  background: #fdfdfd;
+  box-shadow: 0px 5px 5px -5px;
+  transition: all 0.4s ease-in-out;
+}
+.navbar.sticky #container-logo > img {
+  height: 100%;
+  width: auto;
+}
+
 main {
   height: auto;
   width: 100vw;
