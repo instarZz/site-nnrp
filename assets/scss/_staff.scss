@@ -45,7 +45,8 @@ main {
             }
 
             div:hover {
-                background-color: rgb(184, 184, 184);
+                background-color: $primaryColor;
+                color: $white;
             }
         }
 
@@ -61,7 +62,7 @@ main {
             
             .row{
                 // display: none;
-                transition: all 0.20s ease-in-out;
+                transition: all .7s ease;
                 opacity: 0;
                 position: absolute;
                 top:1em;
@@ -71,7 +72,7 @@ main {
                 max-width: 50em;
 
                 >div {
-                    background-color: grey;
+                    background-color: $primaryColor;
                     background-size: cover;
                     background-image: url(/assets/img/LogoNNNoiretblanc.png);
                     width: 8em;

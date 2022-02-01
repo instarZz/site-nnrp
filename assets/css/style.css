@@ -151,7 +151,7 @@ header > section a:active .line.-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90vw;
+  width: 87vw;
 }
 .navbar > ul > li {
   width: 12em;
@@ -182,7 +182,7 @@ header > section a:active .line.-bottom {
 }
 .navbar > ul li:hover > a::after {
   color: #000;
-  background-color: #000;
+  background-color: #c94754;
   width: 100%;
 }
 
@@ -240,7 +240,8 @@ main .container-staff .container-btn > div {
   user-select: none;
 }
 main .container-staff .container-btn div:hover {
-  background-color: #b8b8b8;
+  background-color: #c94754;
+  color: #fdfdfd;
 }
 main .container-staff .grid-staff {
   width: 100%;
@@ -252,7 +253,7 @@ main .container-staff .grid-staff {
   position: relative;
 }
 main .container-staff .grid-staff .row {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.7s ease;
   opacity: 0;
   position: absolute;
   top: 1em;
@@ -261,7 +262,7 @@ main .container-staff .grid-staff .row {
   max-width: 50em;
 }
 main .container-staff .grid-staff .row > div {
-  background-color: grey;
+  background-color: #c94754;
   background-size: cover;
   background-image: url(/assets/img/LogoNNNoiretblanc.png);
   width: 8em;

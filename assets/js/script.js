@@ -2,6 +2,7 @@ const rowFonda = document.getElementById("row-fonda");
 const rowStaff = document.getElementById("row-staff");
 const rowModo = document.getElementById("row-modo");
 const rowMentor = document.getElementById("row-mentor");
+
 const btnMentor = document.getElementById("btn-mentor");
 const btnModo = document.getElementById("btn-modo");
 const btnStaff = document.getElementById("btn-staff");
@@ -12,13 +13,20 @@ btnMentor.addEventListener("click", () => {
         rowMentor.style.opacity = "0";
     } else {
         rowMentor.style.opacity = "1";
+        rowModo.style.opacity = "0";
+        rowStaff.style.opacity = "0";
+        rowFonda.style.opacity = "0";
     }
 });
+
 btnModo.addEventListener("click", () => {
     if (getComputedStyle(rowModo).opacity != "0") {
         rowModo.style.opacity = "0";
     } else {
         rowModo.style.opacity = "1";
+        rowMentor.style.opacity = "0";
+        rowStaff.style.opacity = "0";
+        rowFonda.style.opacity = "0";
     }
 });
 btnStaff.addEventListener("click", () => {
@@ -26,6 +34,9 @@ btnStaff.addEventListener("click", () => {
         rowStaff.style.opacity = "0";
     } else {
         rowStaff.style.opacity = "1";
+        rowModo.style.opacity = "0";
+        rowMentor.style.opacity = "0";
+        rowFonda.style.opacity = "0";
     }
 });
 btnFonda.addEventListener("click", () => {
@@ -33,6 +44,9 @@ btnFonda.addEventListener("click", () => {
         rowFonda.style.opacity = "0";
     } else {
         rowFonda.style.opacity = "1";
+        rowModo.style.opacity = "0";
+        rowStaff.style.opacity = "0";
+        rowMentor.style.opacity = "0";
     }
 });
 
